@@ -29,17 +29,10 @@ Welcome to the backend of the Book Store Application! This project serves as the
   - Spring Boot: Powerful framework for building Java-based APIs.
 
 - **Database:**
-<<<<<<< HEAD
-  - [Specify your database choice, e.g., MySQL, PostgreSQL].
-
-- **Authentication:**
-  - [Specify authentication mechanism, e.g., Spring Security].
-=======
   -  MySQL
 
 - **Authentication:**
   - Spring Security
->>>>>>> a7affc164386da5e04143c5b5b7dd73c5a743841
 
 ## Setup
 
