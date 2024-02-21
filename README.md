@@ -1,6 +1,6 @@
-# Book Store Application - Backend
+# Book Center Application - Backend
 
-This repository contains the backend implementation of the Book Store Application, developed using Spring Boot.
+This repository contains the backend implementation of the Book Center Application, developed using Spring Boot.
 
 ## Table of Contents
 
