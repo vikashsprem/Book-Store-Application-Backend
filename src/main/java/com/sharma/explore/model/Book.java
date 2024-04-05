@@ -21,8 +21,12 @@ public class Book {
     private int price;
     private String language;
     private String imageLink;
+    private String bookLink;
 
-	public Book(Long id, float rating, String description, int discount, String title, String author, String genre, int publicationYear, int quantity, int price, String language,String imageLink) {
+    public Book() {
+    }
+
+	public Book(Long id, float rating, String description, int discount, String title, String author, String genre, int publicationYear, int quantity, int price, String language,String imageLink,String bookLink) {
         this.id = id;
         this.rating = rating;
         this.description = description;
@@ -35,6 +39,7 @@ public class Book {
         this.price = price;
         this.language = language;
         this.imageLink = imageLink;
+        this.bookLink = bookLink;
     }
 
 	public Long getId() {
@@ -130,4 +135,11 @@ public class Book {
   	public void setImageLink(String imageLink) {
   		this.imageLink = imageLink;
   	}
+
+    public String getBookLink() {
+        return bookLink;
+    }
+    public void setBookLink(String bookLink) {
+        this.bookLink = bookLink;
+    }
 }

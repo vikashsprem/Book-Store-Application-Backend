@@ -33,12 +33,12 @@ public class JwtAuthenticationController {
             @RequestBody JwtTokenRequest jwtTokenRequest) {
 
         // Retrieve user details from the database
-        User user = userService.getUserByEmail(jwtTokenRequest.username());
+//        User user = userService.getUserByEmail(jwtTokenRequest.username());
 
         // Check if user exists
-        if (user == null) {
-            throw new BadCredentialsException("Invalid username or password");
-        }
+//        if (user == null) {
+//            throw new BadCredentialsException("Invalid username or password");
+//        }
 
         var authenticationToken = new UsernamePasswordAuthenticationToken(
                 jwtTokenRequest.username(),

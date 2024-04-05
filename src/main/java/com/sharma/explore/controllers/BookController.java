@@ -17,9 +17,7 @@ import com.sharma.explore.services.BookService;
 public class BookController {
 
 	@Autowired
-	private BookService service;
-	@Autowired
-    private BookService entityService;
+	private BookService bookService;
     
     @PostMapping("/add/book")
     public void addBook(@RequestBody Book entity) {
@@ -35,19 +33,20 @@ public class BookController {
                 entity.getQuantity(),
                 entity.getPrice(),
                 entity.getLanguage(),
-                entity.getImageLink()
+                entity.getImageLink(),
+				entity.getBookLink()
             );
-        entityService.saveEntity(book);
+		bookService.saveBook(book);
     }
 
 	@GetMapping("/books")
 	public List<Book> retrieveAllBooks() {
-		return service.findAll();
+		return bookService.getAllBooks();
 	}
 
 	@GetMapping("/books/{id}")
 	public Book retrieveBook(@PathVariable int id) {
-		return service.findOne(Long.valueOf(id));
+		return bookService.findOne((long) id);
 	}
 }
 
